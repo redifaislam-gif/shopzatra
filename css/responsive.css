@@ -1,0 +1,1258 @@
+@media(max-width: 1599px){
+    section.please-select-section {
+        margin-top: -100px;
+        margin-bottom: 50px;
+        width: 100%;
+        min-height: auto;
+    }
+    .celender-flex-box {
+        width: 100%;
+        max-width: 372px;}
+        .hotel-section {
+            max-width: 100%;
+            min-height: 98vh;
+        }
+}
+@media(max-width: 1400px){
+    .container-please{
+      
+        max-width: 1100px;
+        margin:0 auto;
+      }
+      section.please-select-section {
+        margin-top: -100px;
+        margin-bottom: 50px;
+        width: 100%;
+        min-height: 80vh;
+    }
+    .get-tourist-title {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .GetOffer-select-box {
+               
+        height: 283px;
+     
+    }
+    .get-turist-box {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 343px;}
+}
+
+@media(max-width: 1350px){
+    .video-player {
+        width: 100%;
+        max-width: 1092px;
+        height: 68px;
+        position: absolute;
+        left: 49%;
+        top: 27%;
+        transform: translate(-40%,-40%);
+        display: none;
+    }
+
+    .container-please{
+        width:100%;
+        max-width: 1100px;
+        margin:0 auto;
+      }
+
+      .tiket-title-left-right {
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+        padding: 0px 40px;
+    }
+    .get-turist-box {
+        width: 100%;
+        max-width: 281px;}
+        .education-visa-catagori .work-visa-item-catagori {
+            width: 100%;
+            max-width: 141px;
+            height: 55px;
+            padding: 12px 10px;
+        }
+        .container-please {
+            max-width: 1106px;
+            margin: 0 auto;
+            padding: 11px 61px;
+        }
+}
+
+@media(max-width: 1300px){
+    .search-box {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 172px;}
+    
+        .header .logo {
+            max-width: 315px;
+            height: 43px;
+        }
+
+        .dropdown button img {
+            width: 26px;
+        }
+
+
+        .header .menu > .menu-item > a {
+            color: var(--Heading-Text, #0E0D04);
+            font-size: 16px;}
+
+            .dropdown button {
+               
+                font-size: 16px;}
+                .video-background .background {
+                    width: 100%;
+                    max-width: 1005px;
+                    min-height: 408px;
+                }
+
+                .container-please {
+                    max-width: 1106px;
+                    margin: 0 auto;
+                }
+                button.owl-next {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+                .flying-dropdown-box {
+                    padding: 15px 101px 15px 15px;}
+
+                    .people-box {
+                        position: relative;
+                        max-width: 238px;}
+
+                        .where {
+                            position: relative;
+                            max-width: 192px;}
+
+                            .hotel-buking-from {
+                                display: flex;
+                                gap: 9px;
+                                justify-content: center;
+                            }
+
+                            .hotel-buking-content {
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                            }
+
+}
+@media(max-width: 1182px){
+    .banner-login-vedio {
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: -140px;
+        align-items: center;
+    }
+
+    .play-btn {
+        left: 50%;
+        top: 64%;
+    }
+        div.video-player {
+            width: 100%;
+            max-width: 1020px;
+            height: 68px;
+            position: absolute;
+            left: 41%;
+            top: 52%;
+            transform: translate(-40%,-40%);
+            display: none;
+        }
+
+        .banner-menu {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin-top: 135px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .banner-menu li {
+            margin-bottom: 14px;
+        }
+        .banner-menu li {
+            display: flex;
+            width: 100%;
+            max-width: 163px;
+            height: 49.885px;
+            padding: 18px 7px;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            background: #FFF;
+            margin-bottom: 1px;
+            justify-content: center;
+            margin-left: 2px;
+        }
+        .banner-menu li a {
+            color: var(--Heading-Text, #0E0D04);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 12px;
+        }
+        .vedio-right {
+            margin-top: -147px;
+        }
+        .video-background .background {
+            width: 100%;
+            max-width: 1005px;
+            min-height: 230px;
+        }
+
+        .education-visa-catagori {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+}
+@media(max-width: 1200px){
+    .header .logo {
+        max-width: 234px;
+        height: 43px;
+    }
+    .logo img {
+        width: 167px;
+    }
+    .video-player {
+        width: 100%;
+        max-width: 856px;
+        height: 68px;
+        position: absolute;
+        left: 48%;
+        top: 27%;
+        transform: translate(-40%,-40%);
+        display: none;
+    }
+    .Passenger-box {
+        display: inline-flex;
+        gap: 10px;
+        width: 100%;
+        max-width: 169px;}
+        .visa-check-section {
+            background-color: #F9F7EC;
+            padding: 70px 60px;
+            width: 100%;}
+            .visa-check-know-more-button {
+                display: flex;
+                width: 100%;
+                max-width: 500px;}
+
+                .hotel-buking-from {
+                    display: flex;
+                    gap: 9px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .where {
+                    position: relative;
+                    max-width: 388px;}
+                    .people-box {
+                        position: relative;
+                        max-width: 320px;}
+                        .hotel-buking-content {
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                        }
+
+                        .hotel-section {
+                            max-width: 100%;
+                            min-height: 114vh;
+                        }
+}
+@media(max-width: 1100px){
+    .header .logo {
+        max-width: 180px;
+        height: 43px;
+    }
+    .header .menu > .menu-item {
+        display: inline-block;
+        margin-left: -6px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .banner-section {
+        background-color: #F9F7EC;
+        padding: 0 5px;
+    }
+    .container-please {
+        max-width: 1002px;
+        margin: 0 auto;
+        padding: 0px 53px;
+    }
+    button.owl-next {
+        position: absolute;
+        right: -57px;
+        top: 0px;
+    }
+
+    .get-offer-time span {
+        font-size: 15px;
+        max-width: 139.751px;
+}
+        span.getoffer-hour {
+         
+         
+            width: 100%;
+            max-width: 118px;
+            height: 24px;
+            font-size: 15px;}
+            .GetOffer-select-box {
+               
+                height: 283px;
+             
+            }
+}
+@media (max-width: 1100px){
+.search-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 146px;
+}
+.flying-dropdown-box {
+    padding: 15px 43px 15px 15px;}
+
+
+}
+
+@media (max-width: 991px){
+    img.logo2 {
+        width: 105px;
+        height: 44px;
+        margin-top: -6px;
+    }
+    .logo2{
+        display: block;
+    }
+.logo1{
+    display: none;
+}
+    .search{
+
+       display: block;
+      }
+    h2{
+        font-size: 36px;
+    }
+    p{
+        font-size: 16px;
+    }
+    li.responsive-none {
+        display: none;
+    }
+    .banner-menu li {
+        display: flex;
+        width: 100%;
+        max-width: 117px;
+    }
+    .please-tilte h2 {
+      
+        font-size: 25px;
+        
+    }
+    .tiket-from-box {
+        display: flex;
+        gap: 12px;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flying-dropdown-box {
+        padding: 15px 154px 15px 15px;
+    }
+    header.sticky{
+        background-color: #0A1420;
+          
+          padding: 10px 0px;
+          }
+    
+}
+@media (max-width: 1050px){
+    .visa-check-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .visa-check-item-right {
+        /* position: relative; */
+        max-width: 685px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .visa-check-section {
+        background-color: #F9F7EC;
+        padding: 70px 60px;
+        width: 100%;
+        min-height: 215vh;
+    }
+    .cv-section {
+        padding: 80px 40px;
+    }
+    .cv-box-left-right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .Abroad-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 40px;
+    }
+    .contact-box {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px 40px;
+    }
+    .footer-menu {
+     
+        padding: 30px 44px;
+    }
+    .contact-list {
+        display: flex;
+        padding-top: 20px;
+        max-width: 100%;
+        height: 100px;
+        border-bottom: 1px solid #EAE8DB;
+        border-top: 1px solid #EAE8DB;
+        margin-left: -25px;
+        flex-direction: column;
+    }
+    .copyright {
+       
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        padding: 30px 0px 20px 0px;
+        position: relative;
+        top: 183px;
+        /* right: 289px; */
+    }
+
+    .Abroad-left-button {
+     
+        margin-bottom: 15px;
+    }
+
+    .get-tourest-title-right {
+        max-width: 293px;
+        width: 100%;
+        position: relative;
+        right: -19px;
+    }
+    .hotel-title {
+        text-align: -webkit-center;
+    }
+    .hotel-buking-from {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 0px 128px 0px;
+    }
+    .get-tourest-title-left {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: -webkit-center;
+    }
+    .work-visa-catagori {
+        display: flex;
+        gap: 10px;
+        margin: 40px 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .umra-hajj {
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .education-visa-catagori {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 900px){
+ 
+    .tiket-tilte-left {
+        width: 100%;
+        flex-basis: 860px;
+        min-height: auto;
+        text-align: center;
+    }
+    .tiket-title-left-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 125px;
+        flex-wrap: wrap;
+    }
+    .select-date-box {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flying-box {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+    }
+    .container-tab {
+        max-width: 1300px;
+        padding: 30px;
+        box-shadow: 0 2px 16px rgba(0,0,0,.1);
+        border-radius: 20px;
+        background-color: white;
+        margin: 0 auto;
+        min-height: 89vh;
+        margin: 90px 0px 120px 0px;
+        position: relative;
+    }
+        .Passenger-box {
+          
+            max-width: 371px;
+        }
+        .-tab-search-box {
+          
+            width: 367px;
+            height: 55px;
+            padding: 18px 0px;
+            left: 29%;
+            top: 95%;
+        }
+        .flying-dropdown-box {
+           padding: 15px 63px 15px 15px;
+           position: relative;
+            max-width: 660.849px;
+            height: 102.622px;
+        
+        }
+
+        .get-turist-box {
+           
+            align-content: center;
+            margin: 0 auto;
+        }
+        .get-tourist-title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            gap: 21px
+        }
+        .get-tourest-title-left h2 {
+           
+            text-align: center;
+        }
+
+        .hotel-buking-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+}
+
+@media (max-width: 767px){
+    .flying-box {
+        display: flex;
+        gap: 3px;
+        align-content: center;
+        flex-direction: row;
+    }
+    .please-select-box {
+        display: flex;
+        width: 100%;
+        max-width: 181px;}
+        .banner-section {
+            background-color: #F9F7EC;
+            height: 862px;
+        }
+
+        .banner-menu li {
+            display: flex;
+            width: 100%;
+            max-width: 100px;
+            height: 49.885px;
+            padding: 18px 5px;
+        }
+        .banner-menu li a {
+            color: var(--Heading-Text, #0E0D04);
+            font-size: 14px;
+
+}
+li.responsive-none {
+    display: none;
+}
+.banner-menu {
+    margin-top: 55px;
+}
+.vedio-right {
+    margin-top: -411px;
+}
+
+.play-btn {
+    left: 50%;
+    top: 53%;
+}
+section.please-select-section {
+    margin-top: -218px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 0vh;
+}
+.tiket-title-content {
+    margin-top: -109px;
+}
+.please-select-box span{
+ 
+font-size: 16px;
+
+  }
+  .please-select-box img {
+    width: 100%;
+    max-width: 45px;
+    height: 45px;
+}
+.please-select-box {
+    
+    max-width: 203px;
+    height: 141px;
+    padding: 27px 23px;
+
+    gap: 8px;
+   
+}
+
+button.owl-prev img {
+    width: 126px;
+}
+button.owl-next img {
+    width: 112px;
+}
+.please-tilte h2 {
+      
+    font-size: 22px;
+    
+}
+.please-tilte h2 {
+      
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.tiket {
+    margin-top: 150px;
+    width: 100%;
+    min-height: 844px;
+}
+.visa-check-item-left {
+    max-width: 620px;
+    text-align: -webkit-center;
+}
+.visa-check-box {
+   
+    justify-content: center;
+}
+.visa-check-item-right {
+    
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.cv-box-left-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cv-content-right {
+    text-align: -webkit-center;
+}
+.Abroad-box {
+    
+    align-items: center;
+    padding: 0px 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+.Abroad-left p {
+  
+    max-width: 588px;
+    font-size: 15px;
+    text-align: -webkit-center;
+}
+.Abroad-left-button {
+    margin-bottom: 15px;
+    margin: 19px auto;
+}
+.Abroad-left-button {
+    display: flex;
+    max-width: 271px;}
+    .contact-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px 40px;
+    }
+    .visa-check-button {
+        margin: 0 auto;
+    }
+    .contact-left p {
+        text-align: -webkit-center;
+    }
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 16px;
+}
+.get-tourest-title-left h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.hotel-title h2 {
+    font-size: 30px;}
+    .hotel-title p {
+       
+        font-size: 14px;}
+        
+element.style {
+}
+.work-left p {
+   
+    font-size: 14px;}
+    .visa-check-item-left h2 {
+       
+        font-size: 30px;}
+        .footer-menu {
+          
+            align-items: center;
+        }
+        .copyright {
+            justify-content: center;
+            text-align: center;
+        }
+        .copyright {
+            justify-content: center;
+        }
+        .cv-right-button-box div a {
+           
+            font-size: 17px;
+           
+        }
+
+        .get-turist-select {
+          
+            font-size: 14px;}
+            .cv-section {
+                padding: 80px 87px;
+            }
+            .contact-item h3 {
+                color: #C0B914;
+                font-size: 13px;}
+                .cv-list-box {
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+                section.please-select-section {
+                    margin-top: -105px;
+                    margin-bottom: 50px;
+                    width: 100%;
+                    min-height: 0vh;
+                }
+}
+@media (max-width: 700px){
+    .please-select-box {
+        display: flex;
+        width: 100%;
+        max-width: 170px;}
+        button.owl-next {
+            position: absolute;
+            right: -57px;
+            top: 0px;
+        }
+        .work-visa-catagori {
+          
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+        .work-visa-select-2 {
+          
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .visa-check-know-more-button {
+            display: flex;
+            width: 100%;
+            max-width: 457px;
+        }
+        .umra-hajj {
+            display: flex;
+            gap: 10px;
+            margin-top: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-height: 155px;
+        }
+        .cv-imge-left img {
+            width: 355px;
+            height: 300px;
+        }
+        .footer-menu {
+            display: flex;
+            justify-content: left;
+            gap: 30px;
+            padding: 30px 0px;
+            flex-wrap: wrap;
+        }
+        .-tab-search-box {
+            width: 229px;
+            height: 55px;
+            padding: 18px 0px;
+            left: 25%;
+            top: 95%;
+        }
+        .tiket-tilte-left h2 {
+            
+            font-size: 30px;}
+}
+
+@media (max-width: 550px){
+    .banner-menu li {
+        display: flex;
+        width: 100%;
+        max-width: 71px;
+        height: 38.885px;
+        padding: 18px 5px;
+    }
+    li.responsive-none {
+        display: none;
+    }
+    .tab-box .tab-btn {
+        font-size: 13px;
+        font-weight: 600;
+        color: #919191;
+        background-color: white;
+        border: none;
+        padding: 0px 14px;
+        max-width: 98px;
+        height: 51px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+    .tiket-title-left-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+    .visa-check-section {
+        background-color: #F9F7EC;
+        padding: 70px 60px;
+        width: 100%;
+        min-height: 230vh;
+    }
+
+    .flying-dropdown-box {
+        padding: 15px 63px 15px 15px;
+        position: relative;
+        max-width: 660.849px;
+        height: 85.622px;
+    }
+    .flying-box {
+        display: flex;
+        gap: 3px;
+        align-content: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 450px){
+    li.login {
+        max-width: 104px;
+    }
+    li.contact {
+        max-width: 67px;
+    }
+    li.service {
+        max-width: 67px;
+    }
+    li.payment {
+        max-width: 67px;
+    }
+    li.menu {
+        max-width: 50px;
+    }
+    .video-background .background {
+        width: 100%;
+        max-width: 1005px;
+        min-height: 212px;
+    }
+    .please-tilte h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .people-box {
+        position: relative;
+        max-width: 383px;
+        padding: 8px 128px 0px 18px;
+    }
+    .hotle-calender-box {
+        width: 100%;
+        max-width: 341.022px;
+        height: 102.622px;
+        flex-shrink: 0;
+        border-radius: 10.917px;
+        border: 1.092px solid #E5E9EB;
+        display: flex;
+        flex-direction: column;
+    }
+    .search-d-none{
+        display: none;
+    }
+    .search-d-block{
+        display: block;
+    }
+    .celender-left {
+        position: relative;
+        left: 9px;
+    }
+    .content-box {
+        padding: 0px;
+    }
+    .hotel-search-box {
+        top: 55px;
+        width: 368px;
+        height: 113px;
+        padding: 0px 0px 0px 0px;
+        right: -11px;
+}
+.select-date-celender {
+    display: flex;
+    border-top: 2px solid #E5E9EB;
+    padding: 0 0px;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+.Passenger-box {
+    max-width: 301px;
+}
+.tiket-tilte-left h2 {
+    font-size: 24px;
+}
+.tiket-tilte-left p {
+    
+    font-size: 14px;}
+    .copyright {
+        justify-content: center;
+        padding: 0px 42px;
+    }
+}
+@media (max-width: 360px){
+    li.login {
+        max-width: 99px;
+    }
+    li.contact {
+        max-width: 58px;
+    }
+    li.service {
+        max-width: 58px;
+    }
+    li.payment {
+        max-width: 58px;
+    }
+    li.menu {
+        max-width: 47px;
+    }
+}
+
+@media (max-width: 486px){
+    .flying-dropdown-box {
+        padding: 15px 33px 15px 15px;
+        position: relative;
+        max-width: 622.849px;
+        height: 85.622px;
+    }
+    .celender-flex-box {
+        width: 100%;
+        max-width: 362px;
+    }
+}
+@media (max-width: 400px){
+.tiket-tilte-right{
+    display: none;
+}
+.small-video .small-video-background {
+
+    width: 281px;
+    min-height: 94px;
+}
+.flying-left.tiket-select {
+    position: relative;
+    display: flex;
+    width: 228px;
+    height: 94px;
+    margin-top: 17PX;
+}
+    .small-video {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .responsive {
+        width: 100%;
+        min-height: 100px;
+        margin-top: -50px;
+        display: block;
+    }
+ 
+.flying-left.tiket-select.responsive-select{
+    display: none;
+}
+.small-vedio-right-responsive{
+    display: block;
+}
+section.GetOffer-section {
+    margin-top: -98px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 0vh;
+}
+.small-responsive-full{
+    display: none;
+}
+.small-responsive{
+    display: block;
+  }
+.flying-dropdown-box {
+    padding: 15px 35px 15px 15px;
+    position: relative;
+    max-width: 660.849px;
+    height: 85.622px;
+}
+.small-responsive{
+    display: block;
+  }
+.container-tab {
+
+    min-height: 90vh;}
+.flying-box {
+    display: flex;
+    gap: 3px;
+    align-content: center;
+    flex-direction: row;
+}
+.-tab-search-box {
+  
+    border-radius: 8px}
+.-tab-search-box {
+    width: 330px;
+    height: 46px;
+    padding: 18px 0px;
+    left: 8%;
+    top: 95%;
+}
+.Passenger-box {
+    max-width: 308px;
+    height: 81.622px;
+}
+.get-tourest-title-right {
+    /* left: 62px; */
+    max-width: 293px;
+    width: 100%;
+    position: relative;
+    right: -19px;
+    top: -60px;
+    margin: 0 auto;
+}
+img.play-btn.responsive-play-btn {
+    left: 126px;
+}
+.people-box {
+    position: relative;
+    max-width: 350px;
+    padding: 8px 128px 0px 18px;
+}
+
+.check-radio-button {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-check label {
+    text-align: left;
+    margin-left: 6px;
+}
+.hotel-buking-from {
+    margin-top: -11px;
+}
+.hajj-slider{
+    margin-top: -20px;
+}
+section.please-select-section.GetOffer-section.hajj-slider {
+    margin-top: -207px;
+}
+.visa-check-item-right .visa-check-video-background {
+
+    max-width: 732px;
+    height: 223px;
+}
+.visa-check-item-left h2 {
+    font-size: 24px;
+}
+
+.visa-check-section {
+    background-color: #F9F7EC;
+    padding: 70px 20px;
+    width: 100%;
+    min-height: 212vh;
+}
+.cv-section {
+    padding: 80px 0px;
+}
+.cv-list-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 27px;
+}
+.cv-list-itms {
+    width: 116px;}
+    .cv-select-box {
+        display: flex;
+
+        padding: 12px 0px}
+        .cv-content-right h2 {
+            color: var(--Heading-Text, #0E0D04);
+            max-width: 521px;
+            font-size: 24px;}
+            .Abroad-left h2 {
+                color: var(--Heading-Text, #0E0D04);
+                max-width: 588px;
+                font-size: 24px;}
+                .contact-left h2 {
+                    color: #FFF;
+                        font-size: 24px;
+                }
+                .contact-box {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding: 0px 0px;
+                }
+                .contact-left p {
+                    text-align: -webkit-center;
+                    margin-top: -34px;
+                }
+                .contact-button {
+                 
+                    width: 280px;
+                    height: 54px;}
+
+                    .header .logo {
+                        max-width: 237px;
+                        height: 43px;
+                    }
+                    section.please-select-section {
+                        margin-top: -248px;
+                        margin-bottom: 196px;
+                        width: 100%;
+                        min-height: 0vh;
+                    }
+                    section.please-select-section.GetOffer-section {
+                        margin-top: -98px;
+                    }
+                    
+                    .responsive-culomn {
+                    
+                        margin-top: -199px;
+                        margin-bottom: 32px;
+                    }
+                    .small-responsive {
+                       
+                        margin-top: -160px;
+                    }
+}
+@media (max-width: 388px){
+    .flying-dropdown-box {
+        padding: 15px 17px 15px 15px;
+        position: relative;
+        max-width: 660.849px;
+        height: 85.622px;
+    }
+    .celender-flex-box {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+@media (max-width: 356px){
+    .banner-menu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 49px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

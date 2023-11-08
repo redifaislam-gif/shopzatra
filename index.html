@@ -1,0 +1,2302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jquery.nice-number.css" rel="stylesheet">
+    <link href="jquery.nice-number.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   
+    <title>new-drop</title>
+
+
+    <style>
+
+
+/* header-responsive */
+
+@media(max-width: 991px){
+	.header .menu-overlay.active{
+	visibility: visible;
+	opacity: 1;
+}
+	.header .nav-menu{
+		position: fixed;
+		right: -280px;
+		visibility: hidden;
+    max-width: 280px;
+    height: 100%;
+    width: 100%;
+		top:0;
+		overflow-y: auto;
+		background-color: #A7B18B;
+		z-index: 1000;
+		padding: 15px 0;
+		transition: all 0.5s ease;
+	}
+	.header .nav-menu.open{
+		visibility: visible;
+		right: 0px;
+	}
+	.header .menu > .menu-item{
+		display: block;
+		margin:0;
+	}
+	.header .menu > .menu-item-has-children > a{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header .menu > .menu-item > a{
+		color: #111305;
+		padding: 12px 15px;
+
+	}
+	.header .menu > .menu-item:first-child > a{
+	
+	}
+	.header .menu > .menu-item > a .plus:before, 
+	.header .menu > .menu-item > a .plus:after{
+		background-color: #ffffff;
+	}
+	.header .menu > .menu-item-has-children.active > a .plus:after{
+        transform: translate(-50%,-50%) rotate(0deg);
+	}
+	.header .menu > .menu-item > .sub-menu{
+		width: 100%;
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+		border:none;
+		background-color: transparent;
+		box-shadow: none;
+		transform: translateY(0px);
+		padding: 0px;
+		left: auto;
+		top:auto;
+		max-height: 0;
+		overflow: hidden;
+	}
+	.header .menu > .menu-item > .sub-menu > .menu-item > a{
+	    padding: 8px 31px;
+		color: #ffffff;
+		border-bottom: 1px solid #333333;
+	}
+	.header .close-nav-menu,
+	.header .open-nav-menu{
+		display: flex;
+	}
+  .header .close-nav-menu img {
+    width: 15px;
+}
+
+
+  div.search-box {
+    display: none;
+   }
+   .dropdown{
+    display: none;
+   }
+
+   .header .menu > .menu-item > a {
+    color: var(--Heading-Text, #0E0D04);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 68px;
+    padding: 15px;
+}
+}
+@media(min-width: 992px){
+  .header .menu > .menu-item-has-children:hover > .sub-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+   }
+   .header .menu > .menu-item-has-children:hover > a .plus:after{
+      transform: translate(-50%,-50%) rotate(0deg);		
+   }
+
+  
+  }
+/* header-responsive-end */
+
+
+    </style>
+</head>
+<body>
+ <!--header-section-start-->
+  <header class="header"id="header-top">
+    <div class="container">
+       <div class="header-main">
+          <div class="logo">
+             <a href="#"><img src="img/logo.png" class="logo1" alt=""></a>
+             <a href="#"><img src="img/inbox-logo.png" class="logo2" alt=""></a>
+          </div>
+
+          <div class="search-box">
+            <img src="img/search-icon.png" alt="">
+            <input type="text" placeholder="Search Here">
+        </div>
+        <di class="search">
+          <div class="icon">
+        <img src="img/blacksearch.png" alt="">
+          </div>
+          <div class="input">
+        <input type="text" placeholder="Visa Check" id="mysearch">
+          </div>
+        
+        <span class="clear" onclick="document.getElementById('mysearch').value =''"></span>
+        </di>
+          <div class="open-nav-menu">
+           <img src="img/responsive-bar.png" alt="">
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+               <img src="img/close.svg" alt="close">
+            </div>
+            <ul class="menu">
+             
+             
+               <li class="menu-item inbox-active">
+        
+                  <a href="#"><img src="img/inbox-icon.png" alt=""> Inbox</a>
+               </li>
+               <li class="menu-item">
+                <a href="#"> About Us</a>
+             </li>
+              
+             <li class="menu-item">
+              <a href="#">News Media</a>
+           </li>
+
+               <li class="menu-item">
+                  <a href="#">Recommendation</a>
+               </li>
+
+               
+           
+            </ul>
+          </nav>
+
+
+ 
+            <div class="dropdown">
+              <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                English<img src="img/dropdown-icon.png" alt="">
+     
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">bangla</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">bangla</a></li>
+              </ul>
+            </div>
+ 
+          <!-- navigation menu end -->
+       </div>
+    </div>
+ </header>
+ <!--header-section-end-->
+  <!--banner-section-start-->
+
+
+
+
+
+<section class="banner-section" id="banner-top">
+<div class="container">
+  <div class="banner-login-vedio">
+    <div class="login-left">
+            <ul class="banner-menu">
+              <li class="login"><a href="">Login/Sign Up</a></li>
+              <li class="responsive-none"><a href="">Home</a></li>
+              <li class="menu"><a href="">Menu</a></li>
+              <li class="service"><a href="">Service</a></li>
+              <li class="payment"><a href="">Payment</a></li>
+              <li class="contact"><a href="">Contact</a></li>
+            </ul>
+    </div>
+    <div class="vedio-right">
+      <div class="video-background">
+        <img src="img/banner-video-background.png" class="background"alt="">
+        <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      
+      </div>
+    </div>
+  </div>
+<!-- Button trigger modal -->
+
+<section class="please-select-section">
+<div class="container  container-please">
+  <div class="please-tilte">
+    <h2>Please Select Your Need</h2>
+  </div>
+  <div class="owl-carousel owl-theme plase-slider">
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+
+
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+
+
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+
+    <div class="item please-select">
+      <div class="please-select-box">
+        <img src="img/please-select-icon-1.png" alt="">
+        <h3>travel</h3>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<section class="tiket">
+  <div class="container">
+    <div class="tiket-title-content">
+      <div class="tiket-title-left-right">
+     <div class="tiket-tilte-left">
+          <h2>
+            Ticket
+          </h2>
+          <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+        </div>
+        <div class="tiket-tilte-right">
+              <div class="small-vedio-right">
+      <div class="video-background small-video">
+        <img src="img/small-video-back.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+
+      </div>
+    </div>
+
+              <div class="flying-left tiket-select responsive-select">
+                <div class="tiket-select-box">
+                  <span>Get More Service</span>
+                  <select class="form-select" aria-label="Default select">
+                    <option selected>Train</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-tab">
+    
+      <div class="tab-box">
+        <button class="tab-btn active">One Way</button>
+        <button class="tab-btn">Round Way</button>
+        <button class="tab-btn">Multi City</button>
+   
+  <div class="line">
+  
+  </div>
+      </div>
+  
+      <div class="content-box">
+  
+        <div class="content-teb active">
+          <div class="tiket-from-box">
+            <div class="tiket-from-item-left">
+                  <div class="flying-box">
+                    <div class="flying-left">
+                            <div class="flying-dropdown-box">
+                              <span>Flying From1</span>
+                              <select class="form-select" aria-label="Default select">
+                                <option selected>Dhaka</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                    </div>
+  <div class="prev-next-button">
+  <img src="img/prev-next-button.png" alt="">
+  </div>
+                    <div class="flying-right">
+                      <div class="flying-dropdown-box">
+                        <span>Flying To</span>
+                        <select class="form-select" aria-label="Default select">
+                          <option selected>Dhaka</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+  
+            <div class="tiket-from-item-right">
+             
+                      <div class="select-date-box">
+                            <div class="select-date-item-left celender-flex-box">
+                              <span>Select Date</span>
+                                  <div class="select-date-celender">
+                          
+                                    <div class="celender-left">
+                                      <div class="celender1">
+                                    
+                                      <input type="date">
+                                      </div>
+                                    </div>
+                                        <div class="left-border"></div>
+                                    <div class="celender-right">
+                                      <div class="celender1">
+                                 
+                                        <input type="date" class="input1">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+  
+                            <div class="select-date-item-right">
+                              <div class="flying-right">
+                                <div class="Passenger-box">
+                                  <span>Passenger & Cabin Class</span>
+                                  <select class="form-select" aria-label="Default select">
+                                    <option selected>1 Person</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                           </div> 
+                      </div>
+            </div>
+      </div>
+        </div>
+        <div class="content-teb">
+          <div class="tiket-from-box">
+            <div class="tiket-from-item-left">
+                  <div class="flying-box">
+                    <div class="flying-left">
+                            <div class="flying-dropdown-box">
+                              <span>Flying From3</span>
+                              <select class="form-select" aria-label="Default select">
+                                <option selected>Dhaka</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                    </div>
+  <div class="prev-next-button">
+  <img src="img/prev-next-button.png" alt="">
+  </div>
+                    <div class="flying-right">
+                      <div class="flying-dropdown-box">
+                        <span>Flying To</span>
+                        <select class="form-select" aria-label="Default select">
+                          <option selected>Dhaka</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+  
+            <div class="tiket-from-item-right">
+             
+                      <div class="select-date-box">
+                            <div class="select-date-item-left celender-flex-box">
+                              <span>Select Date</span>
+                                  <div class="select-date-celender">
+                          
+                                    <div class="celender-left">
+                                      <div class="celender1">
+                                    
+                                      <input type="date">
+                                      </div>
+                                    </div>
+                                        <div class="left-border"></div>
+                                    <div class="celender-right">
+                                      <div class="celender1">
+                                 
+                                        <input type="date" class="input1">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+  
+                            <div class="select-date-item-right">
+                              <div class="flying-right">
+                                <div class="Passenger-box">
+                                  <span>Passenger & Cabin Class</span>
+                                  <select class="form-select" aria-label="Default select">
+                                    <option selected>1 Person</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                      </div>
+            </div>
+      </div>
+  
+        <div class="content-teb">
+          <div class="tiket-from-box">
+            <div class="tiket-from-item-left">
+                  <div class="flying-box">
+                    <div class="flying-left">
+                            <div class="flying-dropdown-box">
+                              <span>Flying From3</span>
+                              <select class="form-select" aria-label="Default select">
+                                <option selected>Dhaka</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                    </div>
+  <div class="prev-next-button">
+  <img src="img/prev-next-button.png" alt="">
+  </div>
+                    <div class="flying-right">
+                      <div class="flying-dropdown-box">
+                        <span>Flying To</span>
+                        <select class="form-select" aria-label="Default select">
+                          <option selected>Dhaka</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+  
+            <div class="tiket-from-item-right">
+             
+                      <div class="select-date-box">
+                        <div class="hotle-calender-box">
+                          <div class="select-date">
+                            <span>Select Date</span>
+                          </div>
+                         
+                          <div class="hotel-calender-itm-box">
+                            <div class="hotel-calender-left">
+                              <input type="date">
+                            </div>
+                            <div class="hotel-border-left"></div>
+                            <div class="hotel-calender-right">
+                              <input type="date">
+                            </div>
+                          </div>
+                        </div>
+  
+                            <div class="select-date-item-right">
+                              <div class="flying-right">
+                                <div class="Passenger-box">
+                                  <span>Passenger & Cabin Class</span>
+                                  <select class="form-select" aria-label="Default select">
+                                    <option selected>1 Person</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                           
+                              </div>
+                            </div>
+                            </div>
+                      </div>
+            </div>
+      </div>
+        </div>
+      </div>
+               <div class="-tab-search-box">
+                <a href="">Search</a>
+               </div>
+    </div>
+  </div>
+</section>
+
+<section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+  </section>
+  <div class="responsive">
+    <div class="container">
+     <div class="responsive-culomn">
+      <div class="small-vedio-right">
+        <div class="video-background small-video">
+          <img src="img/responsive-video.png" class="small-video-background" alt="">
+          <img src="img/play.png" class="play-btn" onclick="playVideo('img/mituv1.mp4')">
+        </div>
+        <div class="small-video-player" id="videoplayer">
+          <video width="100%" controls id="myVideo">
+            <source src="img/mituv1.mp4" type="video/mp4">
+          </video>
+          <img src="img/close2.jpg" class="close-btn" onclick="stopVideo()">
+          </div>
+        </div>
+
+
+        <div class="flying-left tiket-select">
+          <div class="tiket-select-box">
+            <span>Get More Service</span>
+            <select class="form-select" aria-label="Default select">
+              <option selected>Train</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+  </div>
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<section class="Get-Tourist">
+   <div class="container">
+       <div class="get-tourist-title">
+        <div class="get-tourest-title-left">
+           <h2>
+            Get Tourist and Business Visa Easily
+           </h2>
+           <div class="get-turist-box">
+            <select class="get-turist-select">
+              <option selected>Select Country</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <div class="select-icon">
+       
+            </div>
+
+           </div>
+        
+        </div>
+
+        <div class="get-tourest-title-right small-responsive-full">
+            <div class="video-background small-video tourist-video small-responsive-full">
+              <img src="img/video-244.png" class="small-video-background" alt="">
+              <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            </div>
+            <div class="Know-more">
+              <a href="">Know More Service</a>
+            </div>
+      
+            
+       
+
+       </div>
+   </div>
+
+</section>
+
+
+
+<section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/tourist-slider1.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+<div class="small-responsive">
+  <div class="get-tourest-title-right">
+    <div class="video-background small-video tourist-video">
+      <img src="img/video-244.png" class="small-video-background" alt="">
+      <img src="img/play.png" class="play-btn responsive-play-btn" onclick="playVideo('img/mituv1.mp4')">
+    </div>
+    <div class="Know-more">
+      <a href="">Know More Service</a>
+    </div>
+    <div class="small-video-player" id="videoplayer">
+      <video width="100%" controls id="myVideo">
+        <source src="img/mituv1.mp4" type="video/mp4">
+      </video>
+      <img src="img/close2.jpg" class="close-btn" onclick="stopVideo()">
+      
+      </div>
+    </div>
+
+</div>
+
+
+  <section class="hotel-section">
+    <div class="hotel-buking">
+      <div class="container">
+         <div class="hotel-buking-content">
+          <div class="hotel-title">
+            <h2>Hotel Booking</h2>
+          <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+          
+          <div class="check-radio-button">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                I am Looking For an entire home or apartment
+              </label>
+            </div>
+    
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                I am Traveling For Work
+              </label>
+            </div>
+          </div>
+        
+        </div>
+        <div class="hotel-video small-responsive-full">
+          <div class="video-background small-video tourist-video hotel-video">
+            <img src="img/video-244.png" class="hotel-video-background" alt="">
+            <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+         
+        
+          </div>
+        </div>
+    
+    <div class="hotel-buking-from">
+    
+    <div class="where">
+      <span>Where You Going?</span>
+      <select class="hotel-form-select">
+        <option selected>Arab Amirates</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    
+    <div class="hotle-calender-box">
+      <div class="select-date">
+        <span>Select Date</span>
+      </div>
+     
+      <div class="hotel-calender-itm-box">
+        <div class="hotel-calender-left">
+          <input type="date">
+        </div>
+        <div class="hotel-border-left"></div>
+        <div class="hotel-calender-right">
+          <input type="date">
+        </div>
+      </div>
+    </div>
+    <div class="people-box">
+      <span>people</span>
+    
+      <div class="people">
+        <div class="person">
+          <select class="hotel-form-select">
+            <option selected>1 Person</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      <div class="child">
+        <select class="hotel-form-select">
+          <option selected>1 Child</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      </div>
+    </div>
+    
+    <div class="people-box">
+      <span>Room</span>
+    
+      <div class="room">
+        <div class="person">
+          <select class="hotel-form-select">
+            <option selected>1 Room</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+    
+      </div>
+    </div>
+    
+    
+    <div class="active">
+    <img src="img/hotel-search.png" class="search-d-none" alt="">
+    <img src="img/hotel-search -responsive.png"class="search-d-block" alt="">
+    <div class="hotel-box">
+      <div class="hotel-search-box">
+        <input type="text" placeholder="search here...">
+        <input type="button" value="search">
+      </div>
+    </div>
+    </div>
+    
+    </div>
+      
+      </div>
+    </section>
+    <section class="please-select-section GetOffer-section  hotel-slider">
+      <div class="container  container-please">
+        <div class="please-tilte">
+          <h2>Get Offer</h2>
+        </div>
+        <div class="owl-carousel owl-theme GetOffer-slider">
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/holiday.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+          <div class="item please-select">
+            <div class="GetOffer-select-box">
+         <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+              <h3>Biman Bangladesh Airlines</h3>
+              <div class="get-offer-time">
+                <span>5000 BDT/Person</span>
+                <span class="getoffer-hour">2 Hour 35 min</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
+
+
+      <div class="small-responsive">
+        <div class="get-tourest-title-right">
+          <div class="video-background small-video tourist-video">
+            <img src="img/video-244.png" class="small-video-background" alt="">
+            <img src="img/play.png" class="play-btn responsive-play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+       
+          </div>
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+  <section class="Get-Tourist work-visa">
+    <div class="container">
+        <div class="get-tourist-title">
+         <div class="get-tourest-title-left work-left">
+            <h2>
+              Work Visa
+            </h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+            <div class="work-visa-select-2">
+              <div class="get-turist-box">
+                <select class="get-turist-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+             </div>
+             <div class="get-turist-box">
+               <select class="get-turist-select">
+                 <option selected>Select Country</option>
+                 <option value="1">One</option>
+                 <option value="2">Two</option>
+                 <option value="3">Three</option>
+               </select>
+            </div>
+            </div>
+             
+            <div class="work-visa-catagori">
+              <div class="work-visa-item-catagori">
+                <select class="work-visa-select">
+                  <option selected>A Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="work-visa-item-catagori">
+                <select class="work-visa-select">
+                  <option selected>B Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="work-visa-item-catagori">
+                <select class="work-visa-select">
+                  <option selected>C Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="work-visa-item-catagori">
+                <select class="work-visa-select">
+                  <option selected>D Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+         
+         </div>
+ 
+         <di class="get-tourest-title-right small-responsive-full">
+             <div class="video-background small-video tourist-video">
+               <img src="img/video-244.png" class="small-video-background" alt="">
+               <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             </div>
+             <div class="Know-more">
+               <a href="">Know More Service</a>
+             </div>
+            
+             </div>
+
+        </div>
+    </div>
+ 
+ </section>
+ <section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/work1.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="small-responsive">
+    <div class="get-tourest-title-right">
+      <div class="video-background small-video tourist-video">
+        <img src="img/video-244.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn responsive-play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      <div class="Know-more">
+        <a href="">Know More Service</a>
+      </div>
+   
+      </div>
+  
+  </div>
+
+
+
+
+  <section class="Get-Tourist hajj-visa">
+    <div class="container">
+        <div class="get-tourist-title">
+         <div class="get-tourest-title-left work-left">
+            <h2>
+              Hajj Visa
+            </h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+            <div class="work-visa-select-2">
+              <div class="get-turist-box">
+                <select class="get-turist-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+             </div>
+            </div>
+             
+            <div class="hajj-visa-catagori">
+              <span>Category</span>
+              <div class="umra-hajj">
+                <div class="umra">
+                  <a href="">Umrah</a>
+                 </div>
+                 <div class="hajj">
+                  <a href="">hajj</a>
+                 </div>
+              </div>
+           
+            </div>
+         
+         </div>
+ 
+         <di class="get-tourest-title-right small-responsive-full">
+             <div class="video-background small-video tourist-video">
+               <img src="img/video-244.png" class="small-video-background" alt="">
+               <img src="img/play.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             </div>
+             <div class="Know-more">
+               <a href="">Know More Service</a>
+           
+             </div>
+
+        </div>
+    </div>
+ 
+ </section>
+ 
+ <section class="please-select-section GetOffer-section hajj-slider">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/mokka.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="small-responsive">
+    <div class="get-tourest-title-right">
+      <div class="video-background small-video tourist-video">
+        <img src="img/video-244.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn responsive-play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      <div class="Know-more">
+        <a href="">Know More Service</a>
+      </div>
+   
+      </div>
+  </div>
+
+  <section class="Get-Tourist education-section">
+    <div class="container">
+        <div class="get-tourist-title">
+         <div class="get-tourest-title-left work-left">
+            <h2>
+              Education
+            </h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+            <div class="work-visa-select-2">
+          
+              <div class="get-turist-box">
+                <select class="get-turist-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+             </div>
+             <div class="get-turist-box">
+               <select class="get-turist-select">
+                 <option selected>Our Education Related Service</option>
+                 <option value="1">One</option>
+                 <option value="2">Two</option>
+                 <option value="3">Three</option>
+               </select>
+            </div>
+            </div>
+                 
+
+            <div class="education-catagori-box hajj-visa-catagori">
+              <span>Programs</span>
+              <div class="education-visa-catagori">
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>School</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>Collage</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>University</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>Medical</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>Engineer</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="work-visa-item-catagori">
+                  <select class="work-visa-select">
+                    <option selected>Research</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+  
+                <div class="work-visa-item-catagori education-visa-item">
+                  <select class="work-visa-select education-select">
+                    <option selected>Foundation Course</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+          
+         
+         </div>
+ 
+         <di class="get-tourest-title-right small-responsive-full">
+             <div class="video-background small-video tourist-video">
+               <img src="img/video-244.png" class="small-video-background" alt="">
+               <img src="img/play.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             </div>
+             <div class="Know-more">
+               <a href="">Know More Service</a>
+             </div>
+            
+             </div>
+
+        </div>
+    </div>
+ 
+ </section>
+ <section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/education.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <div class="small-responsive">
+    <div class="get-tourest-title-right">
+      <div class="video-background small-video tourist-video">
+        <img src="img/video-244.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn responsive-play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      <div class="Know-more">
+        <a href="">Know More Service</a>
+      </div>
+     
+      </div>
+  
+  </div>
+
+  <section class="Get-Tourist hajj-visa medicale-section">
+    <div class="container">
+        <div class="get-tourist-title">
+         <div class="get-tourest-title-left work-left">
+            <h2>
+              Medical
+            </h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+            <div class="work-visa-select-2">
+              <div class="get-turist-box">
+                <select class="get-turist-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+             </div>
+
+             <div class="get-turist-box">
+              <select class="get-turist-select">
+                <option selected>Our Medical Related Service</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+           </div>
+            </div>
+             
+            <div class="hajj-visa-catagori medical-visa-catagori">
+              <span>Programs</span>
+              <div class="umra-hajj">
+                <div class="umra">
+                  <a href="">Public</a>
+                 </div>
+                 <div class="hajj">
+                  <a href="">Private Hospital</a>
+                 </div>
+                 <div class="hajj">
+                  <a href="">Diagnostic Centre</a>
+                 </div>
+              </div>
+           
+            </div>
+         
+         </div>
+ 
+         <di class="get-tourest-title-right small-responsive-full">
+             <div class="video-background small-video tourist-video">
+               <img src="img/video-244.png" class="small-video-background" alt="">
+               <img src="img/play.png" class="play-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             </div>
+             <div class="Know-more">
+               <a href="">Know More Service</a>
+             </div>
+           
+             </div>
+
+        </div>
+    </div>
+ 
+ </section>
+
+ <section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/madicale1.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <div class="small-responsive">
+    <div class="get-tourest-title-right">
+      <div class="video-background small-video tourist-video">
+        <img src="img/video-244.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn responsive-play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      <div class="Know-more">
+        <a href="">Know More Service</a>
+      </div>
+      
+      </div>
+  
+  </div>
+
+
+  <section class="Get-Tourist hajj-visa Holiday-Package-section">
+    <div class="container">
+        <div class="get-tourist-title">
+         <div class="get-tourest-title-left work-left">
+            <h2>
+              Holiday Package
+            </h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally</p>
+            <div class="work-visa-select-2">
+              <div class="get-turist-box">
+                <select class="get-turist-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+             </div>
+
+             <div class="get-turist-box">
+              <select class="get-turist-select">
+                <option selected>Our Package Related Service</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+           </div>
+            </div>
+             
+            <div class="hajj-visa-catagori medical-visa-catagori">
+              <span>Programs</span>
+              <div class="umra-hajj">
+                <div class="umra">
+                  <a href="">Economy Class</a>
+                 </div>
+                 <div class="hajj">
+                  <a href="">Business</a>
+                 </div>
+                 <div class="hajj">
+                  <a href="">First Class Passenger</a>
+                 </div>
+              </div>
+           
+            </div>
+         
+         </div>
+ 
+         <di class="get-tourest-title-right small-responsive-full">
+             <div class="video-background small-video tourist-video">
+               <img src="img/video-244.png" class="small-video-background" alt="">
+               <img src="img/play.png" class="play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             </div>
+             <div class="Know-more">
+               <a href="">Know More Service</a>
+             </div>
+            
+             </div>
+
+        </div>
+    </div>
+ 
+ </section>
+
+ <section class="please-select-section GetOffer-section">
+  <div class="container  container-please">
+    <div class="please-tilte">
+      <h2>Get Offer</h2>
+    </div>
+    <div class="owl-carousel owl-theme GetOffer-slider">
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/holiday.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="item please-select">
+        <div class="GetOffer-select-box">
+     <div class="get-offer-image"><img src="img/airplan.png" alt=""></div>
+          <h3>Biman Bangladesh Airlines</h3>
+          <div class="get-offer-time">
+            <span>5000 BDT/Person</span>
+            <span class="getoffer-hour">2 Hour 35 min</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="small-responsive">
+    <div class="get-tourest-title-right">
+      <div class="video-background small-video tourist-video">
+        <img src="img/video-244.png" class="small-video-background" alt="">
+        <img src="img/play.png" class="play-btn responsive-play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      </div>
+      <div class="Know-more">
+        <a href="">Know More Service</a>
+      </div>
+     
+      </div>
+  
+  </div>
+<section class="visa-check-section">
+  <div class="container">
+    <div class="visa-check-button">
+      <a href="">Visa Check</a>
+    </div>
+    <div class="visa-check-box">
+      <div class="visa-check-item-left">
+         
+          <h2>Check Your Visa Today With Passport Number</h2>
+          <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements</p>
+          <div class="get-turist-box visa-check-select-box">
+            <select class="get-turist-select">
+              <option selected>Select Country</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+         </div>
+        </div>
+
+      <div class="visa-check-item-right">
+        <div class="visa-check-know-more-button">
+          <a href="">Know More Service</a>
+        </div>
+        <div class="video-background small-video">
+          <img src="img/visa-check-video.png" class="visa-check-video-background" alt="">
+          <img src="img/play.png" class="visa-check-play-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        </div>
+       
+    
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="cv-section">
+<div class="container">
+<div class="cv-title"><h2>CV</h2>
+  <div class="get-turist-box cv-select-box">
+    <select class="get-turist-select">
+      <option selected>Select Country</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+ </div>
+</div>
+<div class="cv-list-box">
+  <div class="cv-list-itms">
+    <div class="get-turist-box cv-select-box">
+      <select class="get-turist-select">
+        <option selected>Select Country</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+   </div>
+  </div>
+
+
+  <div class="cv-list-itms">
+    <div class="get-turist-box cv-select-box">
+      <select class="get-turist-select">
+        <option selected>Select Country</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+   </div>
+  </div>
+
+  <div class="cv-list-itms">
+    <div class="get-turist-box cv-select-box">
+      <select class="get-turist-select">
+        <option selected>Select Country</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+   </div>
+  </div>
+</div>
+
+<div class="cv-box-left-right">
+  <div class="cv-imge-left">
+<img src="img/cv.png" alt="">
+  </div>
+
+  <div class="cv-content-right">
+    <h2>Grab Your Opportunity With Perfect CV</h2>
+    <p>When the first iPhone launched, the idea of interacting with a small device using multi-touch gestures was quite new. To make people more comfortable with the interface, the initial designs used Skeuomorphism for the UI. </p>
+     <p>When the first iPhone launched, the idea of interacting with a small device using multi-touch gestures was quite new. To make people more comfortable with the interface, the initial designs used Skeuomorphism for the UI</p>
+  
+
+     <div class="cv-right-button-box">
+      <div>  <a href="">Apply For CV</a></div>
+    <div><a href="">Know More Service</a></div>
+      
+     </div>
+  
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="Abroad-section">
+  <div class="container">
+    <div class="Abroad-box">
+      <div class="Abroad-left">
+            <h2>Abroad to Abroad Balance Transfer For Emergency</h2>
+            <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally down to the fact that we understand </p>
+             <div class="Abroad-left-button">
+              <a href="">My Balance Transfer</a>
+             </div>
+          </div>
+      <div class="Abroad-right">
+        <div class="Abroad-right-3-button">
+          <div class="Abroad-right-button">
+            <a href="">Login/Sign Up</a>
+          </div>
+
+          <div class="Abroad-right-button d-flex">
+            <img src="img/abroad-play-btn.png" alt="">
+            <a href="">Know Information</a>
+          </div>
+
+          <div class="Abroad-right-button">
+            <a href="">Help</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact-section">
+<div class="container">
+  <div class="contact-box">
+    <div class="contact-left">
+       <h2>Let’s Contact Us For Any Inquiry</h2>
+       <p>It all boils down to the fact that we understand the “flatness” of our phone screens. Faux 3d elements and real-world textures mentally clash with that flatness creating some dissonance.</p>
+    </div>
+
+    <div class="contact-right">
+      <div class="contact-button">
+        <a href="">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<footer class="footer-section">
+<div class="container">
+  <ul class="footer-menu">
+    <li><a href="">Why Choose Us</a></li>
+
+    <li><a href="">About Us</a></li>
+
+    <li><a href=""> Contact Us </a></li>
+
+    <li><a href="">Recommendation</a></li>
+  </ul>
+
+  <div class="contact-list">
+    <li class="contact-item">
+   <img src="img/contact-location.png" alt="">
+      <h3>2972 Westheimer Rd. Santa Ana, Illinois 85486</h3>
+    </li>
+    <li class="contact-item">
+      <img src="img/contact-location.png" alt="">
+      <h3>+8801000000000, +8801000000000</h3>
+    </li>
+
+    <li class="contact-item">
+      <img src="img/contact-location.png" alt="">
+      <h3>yourmail123@gmail.com</h3>
+    </li>
+  </div>
+
+  <div class="copyright">
+    <img src="img/copyright.png" alt="">
+    <p>Copyright 2023 . Shopno Zatra. All Right Reserved</p>
+  </div>
+</div>
+</footer>
+
+<div class="bottom-to-top">
+  <a href="#banner-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe max-width="700" width="100%" height="420"src="https://www.youtube.com/embed/7UPEJjZ0UAE?si=PINk2LyHgWwUPaYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    ScrollReveal({
+   
+        distance: '10px',
+        duration:1000,
+        delay:400
+     });
+
+     ScrollReveal().reveal('.tiket-tilte-left, .please-tilte,.tiket-from-item-left,.get-tourest-title-left,.hotel-title,.get-turist-box,.visa-check-item-left,.cv-imge-left,.Abroad-left,.contact-left',{ delay: 500, origin:'left'});
+     ScrollReveal().reveal('.tab-box', { delay: 700, origin: 'top'});
+     ScrollReveal().reveal('.small-vedio-right,.tiket-select,.tiket-from-item-right,.get-tourest-title-right,.hotel-video,.visa-check-item-right,.cv-content-right,.Abroad-right,.contact-right,.copyright',{ delay: 800, origin:'right'});
+     ScrollReveal().reveal('.-tab-search-box,.work-visa-catagori div,.education-visa-catagori div,.umra-hajj div,.footer-menu li,.contact-list li', { delay: 1000, origin: 'bottom', interval:200});
+</script>
+  
+  <script src="js/script.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".active").click(function(){
+      $(".hotel-box").toggle();
+     
+    });
+  });
+</script>
+  <script>
+    var videoplayer = document.getElementById("videoplayer");
+    var myVideo = document.getElementById("myVideo");
+    function stopVideo(){
+      videoplayer.style.display ="none";
+    }
+  
+    function playVideo(file){
+      myVideo.src = file;
+      videoplayer.style.display = "block";
+    }
+  
+  </script>
+
+
+<script>
+  var videoplayer = document.getElementById("videoplayer");
+  var myVideo = document.getElementById("myVideo");
+  function stopVideo(){
+    videoplayer.style.display ="none";
+  }
+
+  function playVideo(file){
+    myVideo.src = file;
+    videoplayer.style.display = "block";
+  }
+
+</script>
+    <!-- header-sticky-start -->
+    <script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(window).scrollTop()>300){
+      $('.bottom-to-top a').css({
+        "opacity":"1", "pointer-events":"auto"
+      });
+    } else{
+      $('.bottom-to-top a').css({
+        "opacity":"0", "pointer-events":"none"
+      });
+    }
+  });
+});
+    </script>
+
+
+<script>
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector(".header");
+header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
+
+    <!-- header-sticky-end -->
+
+    
+    <!--tab-product-start-->
+<script>
+
+$(document).ready(function(){
+      $('.list').click(function(){
+        const value= $(this).attr('data-filter');
+        if(value == 'all'){
+          $('.itemsBox').show('1000');
+        }
+        else{
+          $('.itemsBox').not('.'+value).hide('1000');
+          $('.itemsBox').filter('.'+value).show('1000');
+        
+        }
+    
+      })
+
+      $('.list').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+     })
+</script>
+<script>
+
+  var left='<img src="img/left.png">';
+  var right='<img src="img/right.png">';
+  $('.plase-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText:[left,
+    right 
+  ],
+    dots:true,
+    responsive:{
+       400:{
+        items:3
+       },
+        650
+        :{
+            items:4
+        },
+        700
+        :{
+            items:4
+        },
+        1000:{
+            items:4
+        },
+        1350:{
+            items:5
+        },
+        1450:{
+            items:6
+        }
+    }
+})
+</script>
+
+<script>
+
+  var left='<img src="img/left.png">';
+  var right='<img src="img/right.png">';
+  $('.GetOffer-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText:[left,
+    right 
+  ],
+    dots:true,
+    responsive:{
+       200:{
+        items:1
+       },
+     
+        650
+        :{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1350:{
+            items:3
+        },
+        1450:{
+            items:3
+        }
+    }
+})
+</script>
+    <!--tab-product-end-->
+
+    <script>
+      const tabs= document.querySelectorAll('.tab-btn');
+       const allcontent= document.querySelectorAll('.content-teb');
+    
+    
+       tabs.forEach((tab, index)=>{
+             tab.addEventListener('click', (e)=>{
+                tabs.forEach(tab=>{tab.classList.remove('active')});
+                tab.classList.add('active');
+    
+    
+                var line=document.querySelector('.line');
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+    
+    
+    
+                allcontent.forEach(content=>{content.classList.remove('active')});
+                allcontent[index].classList.add('active');
+    
+    
+    
+              })
+        })
+    
+    
+    </script>
+
+<script>
+  const icon= document.querySelector('.icon');
+  const search = document.querySelector('.search');
+  const logo = document.querySelector('.logo');
+  icon.onclick = function(){
+    search.classList.toggle('active');
+  }
+ 
+  search.onclick = function(){
+    logo.style.display ="none";
+  }
+  </script>
+  
+</body>
+</html>
